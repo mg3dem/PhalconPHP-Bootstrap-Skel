@@ -2,7 +2,7 @@
 use Phalcon\Loader,
     Phalcon\DI\FactoryDefault,
     Phalcon\Db\Adapter\Pdo\Mysql,
-    Phalcon\Mvc\Model\MetaData\Memory as appCache,
+    Phalcon\Mvc\Model\MetaData\Apc as appCache,
     Phalcon\Session\Adapter\Files,
     Phalcon\Mvc\Url,
     Phalcon\Mvc\Router,
