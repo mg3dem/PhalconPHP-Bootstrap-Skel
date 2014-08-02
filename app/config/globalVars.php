@@ -13,7 +13,7 @@ $globalVars = array(
 	),
 	'appBaseURI'						=> '/',
 	'volt' => array(
-		'path'							=> '../volt/cache',
+		'path'							=> '../volt/cache/',
 		'extension' 					=> '.compiled'
 	)
 );
