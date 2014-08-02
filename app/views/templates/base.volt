@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ seo.title }}</title>
-    <meta name="description" content="{{ seo.description }}">
-    <meta name="keywords" content="{{ seo.keywords }}">
+    <title>{{ seoTitle }}</title>
+    <meta name="description" content="{{ seoDescription }}">
+    <meta name="keywords" content="{{ seoKeywords }}">
     {{ assets.outputCss('remoteStyles') }}
     {{ assets.outputCss('localStyles') }}
     <!--[if lt IE 9]>

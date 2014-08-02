@@ -30,13 +30,5 @@ class BaseController extends \Phalcon\Mvc\Controller
 			->setTargetUri('js/production.js')
 			->join(true)
 			->addFilter(new \Phalcon\Assets\Filters\Jsmin());
-
-		$this->view->setVars(array(
-			'seo' => array(
-				'title' => '',
-				'description' => '',
-				'keywords' => ''
-			)
-		));
 	}
 }

@@ -2,7 +2,7 @@
 use Phalcon\Loader,
     Phalcon\DI\FactoryDefault,
     Phalcon\Db\Adapter\Pdo\Mysql,
-    Phalcon\Mvc\Model\MetaData\Apc as appCache,
+    Phalcon\Mvc\Model\MetaData\Memory as appCache,
     Phalcon\Session\Adapter\Files,
     Phalcon\Mvc\Url,
     Phalcon\Mvc\Router,
@@ -52,6 +52,7 @@ try {
 
     //Setup a base URI so that all generated URIs include the "tutorial" folder
     $di['url'] = function(){
+        global $config;
         $url = new Url();
         $url->setBaseUri($config->appBaseURI);
         return $url;
