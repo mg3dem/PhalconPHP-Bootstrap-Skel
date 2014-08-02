@@ -15,7 +15,8 @@
     <![endif]-->
 </head>
 <body>
-{{ content() }}
+{% block content %}
+{% endblock %}
 {{ assets.outputJs('remoteJs') }}
 {{ assets.outputJs('localJs') }}
 </body>
